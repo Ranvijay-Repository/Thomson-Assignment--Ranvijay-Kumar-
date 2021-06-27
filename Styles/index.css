@@ -1,0 +1,963 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  margin: 1.2rem 0;
+  color: #686868;
+}
+
+svg {
+  height: 50px;
+  width: 50px;
+  color: #cccccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header {
+  border-bottom: 1px solid #e2e8f0;
+  background-color: #ffffffd3;
+  position: absolute;
+  width: 100vw;
+}
+
+.header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 19%;
+}
+
+.header .navbar .nav-logo {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: #000000;
+  letter-spacing: 0.2rem;
+}
+
+.header .navbar .nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .navbar .nav-menu .nav-item {
+  margin-left: 1.2rem;
+}
+
+.header .navbar .nav-menu .nav-item .nav-link {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #1d1d1d;
+}
+
+.header .navbar .nav-menu .nav-item .nav-link:hover {
+  color: #db2626;
+}
+
+.header .navbar .info p {
+  padding: 0;
+  margin: 5px;
+}
+
+.header .navbar .info .FirstPara {
+  font-size: 0.8rem;
+}
+
+.header .navbar .hamburger {
+  display: none;
+}
+
+.header .navbar .hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+@media screen and (max-width: 1520px) {
+  .header .navbar {
+    padding: 0 12%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header .navbar {
+    padding: 0 2%;
+  }
+}
+
+.info2 {
+  display: none;
+}
+
+@media screen and (max-width: 840px) {
+  .header .navbar {
+    padding: 0 2%;
+  }
+  .header .navbar .navigationItems {
+    display: none;
+  }
+  .header .navbar .nav-menu.active {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .header .navbar .nav-menu .nav-item .nav-link {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .header .navbar {
+    padding: 0 2rem;
+    /* Inside the Media Query. */
+  }
+  .header .navbar .hamburger {
+    display: inline;
+  }
+  .header .navbar .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 3rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+  .header .navbar .nav-menu .active {
+    left: 0;
+  }
+  .header .navbar .nav-menu .nav-item {
+    margin: 0.1rem;
+    width: 100%;
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    cursor: pointer;
+  }
+  .header .navbar .nav-menu .nav-item .nav-link {
+    font-size: 1.3rem;
+  }
+  .header .navbar .nav-menu .nav-item:hover {
+    background-color: #000;
+  }
+  .header .navbar .nav-menu .nav-item:hover .nav-link {
+    color: #fff;
+  }
+  .header .navbar .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .header .navbar .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .header .navbar .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
+  }
+  .header .navbar .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
+  }
+  .header .navbar .info {
+    display: none;
+  }
+  .header .navbar .info2 {
+    display: block;
+  }
+}
+
+.Home {
+  background-image: url("../assets/banner-image.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+  color: #ecf0f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Home__Title {
+  width: 63vw;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.Home__Title h1 {
+  font-weight: 700;
+  font-size: 3.4rem;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+@media screen and (max-width: 1025px) {
+  .Home h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Home h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 745px) {
+  .Home__Title {
+    width: 90vw;
+  }
+  .Home__Title h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 745px) {
+  .Home__Title {
+    width: 90vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Home__Title h1 {
+    font-size: 1.4rem;
+  }
+}
+
+.ContentSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ContentSection__All {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 75%;
+}
+
+.ContentSection__All__Left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0.7;
+      -ms-flex: 0.7;
+          flex: 0.7;
+  max-width: 800px;
+  min-width: 300px;
+  padding: 1rem;
+}
+
+.ContentSection__All .Accordian {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0.3;
+      -ms-flex: 0.3;
+          flex: 0.3;
+  max-width: 400px;
+  min-width: 300px;
+  background-color: #07291fb0;
+  width: 100%;
+  height: 100%;
+  margin-top: 2rem;
+  border-radius: 10px;
+  /* Accordion styles */
+}
+
+.ContentSection__All .Accordian .col h2 {
+  color: #fff;
+  font-size: 1.7rem;
+  line-height: 4rem;
+  margin-bottom: 1rem;
+}
+
+.ContentSection__All .Accordian input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.ContentSection__All .Accordian .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ContentSection__All .Accordian .row .col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.ContentSection__All .Accordian .row .col:last-child {
+  margin-left: 1em;
+}
+
+.ContentSection__All .Accordian .tabs {
+  border-radius: 3px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+.ContentSection__All .Accordian .tab {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+
+.ContentSection__All .Accordian .tab-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em;
+  background: #13644c;
+  font-weight: bold;
+  cursor: pointer;
+  /* Icon */
+}
+
+.ContentSection__All .Accordian .tab-label:hover {
+  background: #22c393;
+}
+
+.ContentSection__All .Accordian .tab-label::after {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.ContentSection__All .Accordian .tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  color: #13644c;
+  background: #081b15;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  color: #fff;
+}
+
+.ContentSection__All .Accordian .tab .InnerTab {
+  background-color: #05aa73;
+}
+
+.ContentSection__All .Accordian .tab .InnerTab:hover {
+  color: #000;
+  background-color: #36f8ae;
+}
+
+.ContentSection__All .Accordian .tab-close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  background: #13644c;
+  cursor: pointer;
+}
+
+.ContentSection__All .Accordian .tab-close:hover {
+  background: #0a5740;
+}
+
+.ContentSection__All .Accordian input:checked + .tab-label {
+  background: #1ca179;
+}
+
+.ContentSection__All .Accordian input:checked + .tab-label::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.ContentSection__All .Accordian input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 1em;
+}
+
+@media screen and (max-width: 900px) {
+  .ContentSection__All {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .ContentSection__All {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ContentSection__All .Accordian {
+    max-width: 100vw;
+  }
+}
+
+.About h1 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.About p {
+  text-align: justify;
+}
+
+.About h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem 0;
+}
+
+.About ul {
+  -webkit-text-decoration: dotted;
+          text-decoration: dotted;
+  list-style: circle;
+  margin: auto;
+}
+
+.About ul li {
+  list-style: circle;
+  color: #686868;
+  line-height: 1.7rem;
+}
+
+.Blog h3 {
+  margin: 1.2rem 0;
+}
+
+.Blog p {
+  text-align: justify;
+  line-height: 1.5rem;
+}
+
+.Blog .whySuccessfull {
+  background-color: #e0e0e0;
+  padding: 1rem 3rem;
+}
+
+.Blog .whySuccessfull h5 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.ContectSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+}
+
+.ContectSection .Form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+}
+
+.ContectSection .Form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #0a6147;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50vw;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.ContectSection .Form form .FormContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 750px;
+  min-width: 350px;
+  margin: 3rem;
+}
+
+.ContectSection .Form form .FormContent h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.ContectSection .Form form .FormContent p {
+  color: #d8d8d8;
+}
+
+.ContectSection .Form form .FormContent p span {
+  font-weight: 700;
+  color: #fff;
+}
+
+.ContectSection .Form form .FormContent input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 750px;
+  min-width: 500px;
+  padding: 0.7rem;
+  margin: 2px 0;
+}
+
+.ContectSection .Form form .FormContent textarea {
+  width: 100%;
+  max-width: 550px;
+  max-height: 130px;
+  min-width: 350px;
+  min-height: 130px;
+  font-weight: bold;
+  font-size: larger;
+  padding: 1rem;
+  margin: 2px 0;
+}
+
+.ContectSection .Form form .FormContent .CheckBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ContectSection .Form form .FormContent .CheckBox input {
+  height: 20px;
+  width: 20px;
+  min-width: 20px;
+  max-width: 20px;
+  margin-right: 1rem;
+}
+
+.ContectSection .Form form .FormContent .CheckBox p {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 1rem;
+}
+
+.ContectSection .Form form .FormContent .CheckBox p .CommonTag {
+  text-decoration: underline;
+  color: #17c9c9;
+  cursor: pointer;
+}
+
+.ContectSection .Form form .FormContent .CheckBox p .dics {
+  color: #fff;
+}
+
+.ContectSection .Form form .FormContent .SubmitButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #000;
+  cursor: pointer;
+  max-width: 350px;
+}
+
+.ContectSection .Form form .FormContent .SubmitButton__containent {
+  height: 60px;
+}
+
+.ContectSection .Form form .FormContent .SubmitButton__containent p {
+  padding: 0 1.2rem 0 3rem;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.ContectSection .Form form .FormContent .SubmitButton .SVGicon {
+  background-color: #05aa73;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 60px;
+  width: 70px;
+}
+
+.ContectSection .Form form .FormContent .SubmitButton .SVGicon svg {
+  height: 50px;
+  width: 50px;
+  color: #e7e7e7;
+}
+
+.FormDetails {
+  background-color: #686868;
+  width: 50vw;
+  height: 100%;
+  padding: 5rem 3rem;
+}
+
+.FormDetails h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: -10px;
+  color: #fff;
+  letter-spacing: 0.4rem;
+  margin-left: 2.2rem;
+}
+
+.FormDetails svg {
+  height: 25px;
+  width: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.FormDetails .Location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1.5rem 0;
+}
+
+.FormDetails .Location svg {
+  margin-right: 1rem;
+}
+
+.FormDetails .Location .details p {
+  color: #cccccc;
+  line-height: 1.3rem;
+  padding: 0;
+  margin: 0;
+}
+
+.FormDetails .Local {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1.5rem 0;
+}
+
+.FormDetails .Local svg {
+  margin-right: 1rem;
+}
+
+.FormDetails .Local .LocalDetails p {
+  color: #cccccc;
+}
+
+.FormDetails .Local .LocalDetails .Headeing {
+  color: #ffffff;
+  margin-bottom: -5px;
+}
+
+.FormDetails .TollFree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1.5rem 0;
+}
+
+.FormDetails .TollFree svg {
+  margin-right: 1rem;
+}
+
+.FormDetails .TollFree .TollDetails p {
+  color: #cccccc;
+}
+
+.FormDetails .TollFree .TollDetails .TollHead {
+  color: #ffffff;
+  margin-bottom: -4px;
+}
+
+.FormDetails .ReviewButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #000;
+  height: 50px;
+  width: 200px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.FormDetails .ReviewButton h4 {
+  padding: 1.5rem;
+  color: #fff;
+  padding-left: 2rem;
+}
+
+.FormDetails .ReviewButton .arrowButton {
+  height: 50px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.FormDetails .ReviewButton .arrowButton svg {
+  height: 50px;
+  width: 50px;
+  background-color: #05aa73;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+}
+
+footer .footer {
+  padding: 3% 19%;
+}
+
+footer .footer p {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+footer .footer p a {
+  color: #1cb1b6;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1115px) {
+  .ContectSection .Form form .FormContent {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .ContectSection .Form form .FormContent {
+    max-width: 300px;
+    margin: 2.5rem 1rem;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .ContectSection .Form form .FormContent {
+    max-width: 250px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .ContectSection .Form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ContectSection .Form form {
+    width: 100vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .ContectSection .Form form .FormContent {
+    max-width: 100%;
+    min-width: 300px;
+  }
+  .ContectSection .Form .FormDetails {
+    width: 100vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  footer .footer {
+    padding: 3% 5%;
+  }
+}
+/*# sourceMappingURL=index.css.map */

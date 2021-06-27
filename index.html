@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FindLaw</title>
+  <link rel = "icon" href = 
+"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAMAAAAKE/YAAAAAxlBMVEX/////eAD/egD/dwD/ewD/dgD/eQD/ggD/dAD/jAD/gQD/gwD/fQD/cwD/jQD/gAD/fAD/kAD/fgD/igD/dQD/fwD/iQD/hQD/jgD/cAD/cgD/iAD/hgD/iwD/hAD/hwD/jwD/cQD/8uj/zJn/7N//1r3/mzL/lDf/hBT/oUL/tHT/rnT/m0L/x5r/qF7/tnH/l0L/5cP/mhf/7tf/wXD/4Lj/t37/x3//qz7/lCD/xov/jh7/vo3/2MH/pFT/iyr/jzf/gh+LBmk7AAAHwklEQVR4nNXai1rbOBAFYAVC0o1poSFpSmihdHuBtluglNvSy/b9X2ptS7KlxB6dcTSOM0/wf+c7GdlylMrn6u7+23Ns3izMS3+eefOXO6/LOSjnhTNH5ZzYeWXm6OH87kqVc/0dFccxH1SbKXI6s9ns4eLamm/un79paH5JmYGYq80nFeZZNsezDzfG/K0pWTrmRXPGfsjV1/eoeV1tLskpOvmQNeS7RDOY5nCbrTmdi3RvoOVYb5sL8nHycKXu2qvGam025nTu1H23Y64wJ+cK2dBdabM2J4+qnWasvDRKcpLMwmhBc5OYswmiO7A0Zj45iO7S0kgSCN25NusZUuiOLY3CTKFbaTM/5iGB7mabh0MKvbalAZhr0J1tcz26q0tjSKAFzTFiHo5Gy+i1tZk4At2YR8voLi8Na15Ed3c3l+QFdMeXhiH76MgxR18ao2V0y23mHScu2UGvbWmwzXt7alN2c0k2aEFy5Dbn5hy9WTFr9Nra3CzmDN3y0mh2BPrmRTQcc7wy40vDzlTB5ML88O/fEecrZa4kTz001ozX529VxPlntmgOxOyjwTbLoBlkB423WQANt9lH40vjID4aNE+nHpqz5+KjmWSNxpaG3XTR0ZR5qRnpjMeKfQTGRh9z2pyRMzQrZjE0fQROPfNY8WKWQjNiXkIHYxZCw21eRiNkiR8iujTGFWjQ/CJ20syYx+NdVW2uJR9ERyecNmfk3QINxawfP4XQ4aVhyBb9rN689OAsg8bI2qzRYJsF0WibSzQjZhk02eZlc4rG2yyFZlUjnX3Fizmdo9hoeGlYs48OtFm/usZGD1nNyMweGiET6B8fmswjcgSOXbKLhmKm0J/KO5eql5GaX9seN2YHDZDNrUY9usHXE26bPXR4aRQXMWE0dd3Fem6uMRs0wxxEN76hA2Pe7/cVo80QmmvmtTkj52jgPHHNJxS6gsy7h6GWhjX3FacZ+a0ihRZq875v9tDk0ihuQuvR0kvDkD10sM369hZAy7S5MDtojAyguW0GjkCP3N9SvJgBtHTM/S2DxtqMoMV2c0k2aAb56OQVhRY6An1zjmaZSXQbMedovM36k089Wu4I9M1biklG0PGPQI/soJFmQGiyzSstDTsDxTWfvPpCoYXbnJsNuoZc+Zl4RqFB8yoxDwwaj/kkfSgi0M3JYJsHA4sGf4HmM3E9ukm4/JhzNCtmCv3jY4M522W12aCrzVVk8zm+Fv32HX/efu0Tz82VMQ8GPcWLmUI3mos+N+ZBr0QHlobzp4e46C3kCPTIJRqMOTUfy6DhmAt0aDe7fy6RQYNt7pVoPOaZDBqLuddz0NDSKO40BNCsmHM0K2YJNKfNBs01x0YPuDH3trcVkyyGhmPeLtFIm7U5EUHjMZdoOmbvuksCjca8ve2g4ZiPRdCsmA0abbP5M1psNKfNBRr+BR5LoHvcmDM0L2ZBNHUE+uYdtUwO/Fl4KIOGY97eKdFgzIkMGm1zRi7RYMxCaJrc88kWjcVs/owWHc2L2aDRNic0+t17/vz8NWC1uUCHjsDF26469O1ZgxmzY87QvJgp9Odmt1zcmF000GZtHtWiG3w9WSYHY97ZmShmzEMCveINXXBpGPLEoEO72b2hA9ANLkLRmCcTi8ZjRtBRYq5p88SisaVR/tkkgJaOOUezYg6imV9POOTCPFFs8x6F5i6NRuYSjZGHIwot3+Z8nihGm/VleT26hTZn5CcGDccMoWVjtmiwzSMMLXAEeuQczYk5Q1+SaG7M1eZqsjE/UeEjcPHTD4WWbvMiGoo5NU8JtHibF9AgeY9AtxNzicZi1h8Ew2jsCFy+7gq32UUDS6P4kBlGxz8CPfPTp4oXM4BmLw1mzE9zNNxmBC3c5oycotGlUcyYQosuDWsu0EmFufp/GhQ6fpsryAUaarP+K0E9Wu4I9M0GDceMoIVjNmi0zVMILdpmi+aRQ2jJpVGiGW0G0HK72Zm5YrRZm3fr0fJtzsjzAo3GPCbQ0kvDmg0aa7N+2Q6jBds8nxdo0GzepkJosaVhzTmaEXMYLdtmi6afjiouFUl0ozYzzXPFizmdfQK9aswThOyggTbrl20CLd9mDw3GnD8x16Ll2uybDRqOGUIHjsAVY57PTxWjzbsQOvADXGFpWHOGxpZGcacRQAsuDUNO0Yw2I2j5mD10uM3a3CfQskvDkEs0GvM+hW4l5hINtVm/uNaj8efmxm120MjSKC41+pfvaLTAEeibczTaZjNnv75Wzu8W2mzReJvti+tgWZVhei202aCZMbfxsk3H7KKBNgt8PWkQ8+nhoeKQV706WnFpGLJFo21u52U7ZNbozWnzoUV3KGagGjma+wMUvTqCyC6auzRE3wJJc4GOsjRaiblEr73NeMwW3bmlQZtzdDttjkbO0JtwBC6iNy5mF92RNp8CZovu+BFYie7mbq4za/TmtLlAd3NpEOZDVUFu8gtsL2YP3eUjsA6NPYR2IOYMPd2oNuczV2cyMUd5bq6ZP+p8E45Afy7V7Urmlo5Ab05v1dVjv/ERuI6Y03b8VOqi6Q+w9aVh5pNS6vpjfzOWhpn/8pvmm8dN2M1FOd7r2/Cbj/2tDVgaOuf39g7/+uJxI2I+/fPZ/QpxdfvlbL/bbZ7/ubz9qbX/A6rm/DRFT7akAAAAAElFTkSuQmCC" 
+        type = "image/x-icon">
+  <link rel="stylesheet" href="./Styles/index.css" />
+</head>
+
+<body>
+  <!-- =========== Navigation =========== -->
+
+  <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">FindLaw</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#Home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#About" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Blog" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#Contact" class="nav-link">Contact</a>
+                </li>
+                <li class="info2">
+                  <p class="FirstPara">Service Clints in Florida & Nationally</p>
+        <p class="SecondPara">Local : <span> 123-456-789</span></p>
+                </li>
+            </ul>
+            <div class="info">
+              <p class="FirstPara">Service Clints in Florida & Nationally</p>
+        <p class="SecondPara">Local : <span> 123-456-789</span></p>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+</header>
+
+  <!-- ================= Home Section ============== -->
+
+
+  <div id="Home" class="Home">
+    <div class="Home__Title">
+      <h1>Seasoned Attorneys <br> who get results</h1>
+    </div>
+  </div>
+  <div class="ContentSection">
+    <div class="ContentSection__All">
+
+
+      <div class="ContentSection__All__Left">
+
+        <!-- ========= About Section =========== -->
+        <div class="About" id="About">
+          <h1>Page Title Style And <br> PlaceMent(H1)</h1>
+          <p>
+            This text is temporary. Your opproved content draft will be integrated
+            into your design. This is merely to show you what your content area
+            will look like after the development of your web site.
+          </p>
+          <p>
+            A FindLaw FirmSite" is a legal Web site designed and built by FindLaw
+            ond is the difference between simply having a Web site and having a
+            Web site that gets great results. A FirmSite delivers a unique
+            combination of dynamic design, compelling content and torgeted
+            traffic. Link Color Hover Color Active Color Visited
+          </p>
+
+          <h2>This is the Header Two (H2) <br>Subhead Style</h2>
+          <ul>
+            <li> <span> ● </span> An attorney site built by people who know the legal industry.</li>
+            <li> <span> ● </span> An award-winning Web site design team.</li>
+            <li> <span> ● </span> Integrated online marketing to increase traffic.</li>
+            <li> <span> ● </span> Voluable content options to save time and money.</li>
+          </ul>
+        </div>
+        <!-- =============== Blog Section ============ -->
+        <div class="Blog" id="Blog">
+          <h3>This is the Header Three (H3) Subhead Style</h3>
+          <p>
+            Not all law firm Web sites ore creoted equal. While mony Web sites for
+            lawyers reside passively on the Internet, FirmSites hove been
+            extremely successful in winning more new clients.
+          </p>
+          <div class="whySuccessfull">
+            <h5>
+              Why are we successful at growing law firms on the Web? In essence,
+              FirmSites excel in these areas :
+            </h5>
+          </div>
+          <p>
+            FirmSites consistently appear to the right people at the right time -
+            while they ore actively searching the Internet for your type of legal
+            help in your law firm's geographic area. High visibility simply means
+            you get more and better troffic.
+          </p>
+          <p>
+            Once all that traffic is driven to your site, the Web site design
+            component needs to rise to the challenge, giving your online visitors
+            a positive, losting impression of your firm. FirmSites use design to
+            quickly distinguish your firm from ather attorneys, by visually
+            positioning your Web site so it's attroctive and easy to novigate.
+            Word Count 291.
+          </p>
+        </div>
+      </div>
+      <!-- ============ Accordian Section =========== -->
+      <div class="Accordian">
+        <div class="col">
+          <h2>Important Areas</h2>
+          <div class="tabs">
+            <div class="tab">
+              <input type="radio" id="rd1" name="rd" />
+              <label class="tab-label" for="rd1">Importent Issues In Labor And Employment Law</label>
+              <div class="tab-content InnerTab">
+                Representation in Legal And Administration Proceedings
+              </div>
+              <div class="tab-content InnerTab">
+                Reviewing and prepairing Employment Documentation
+              </div>
+              <div class="tab-content InnerTab">
+                Human Resource Consulting And Training
+              </div>
+              <div class="tab-content InnerTab">
+                Outisde general counsel services
+              </div>
+            </div>
+            <div class="tab">
+              <input type="radio" id="rd2" name="rd" />
+              <label class="tab-label" for="rd2">Employee</label>
+              <div class="tab-content InnerTab">
+                Representation in Legal And Administration Proceedings
+              </div>
+              <div class="tab-content InnerTab">
+                Reviewing and prepairing Employment Documentation
+              </div>
+              <div class="tab-content InnerTab">
+                Human Resource Consulting And Training
+              </div>
+              <div class="tab-content InnerTab">
+                Outisde general counsel services
+              </div>
+            </div>
+            <div class="tab">
+              <input type="radio" id="rd3" name="rd" />
+              <label class="tab-label" for="rd3">Health Care Law</label>
+              <div class="tab-content InnerTab">
+                Representation in Legal And Administration Proceedings
+              </div>
+              <div class="tab-content InnerTab">
+                Reviewing and prepairing Employment Documentation
+              </div>
+              <div class="tab-content InnerTab">
+                Human Resource Consulting And Training
+              </div>
+              <div class="tab-content InnerTab">
+                Outisde general counsel services
+              </div>
+            </div>
+            <div class="tab">
+              <input type="radio" id="rd4" name="rd" />
+              <label class="tab-label" for="rd4">Commercial Litigation</label>
+              <div class="tab-content InnerTab">
+                Representation in Legal And Administration Proceedings
+              </div>
+              <div class="tab-content InnerTab">
+                Reviewing and prepairing Employment Documentation
+              </div>
+              <div class="tab-content InnerTab">
+                Human Resource Consulting And Training
+              </div>
+              <div class="tab-content InnerTab">
+                Outisde general counsel services
+              </div>
+            </div>
+            <div class="tab">
+              <input type="radio" id="rd5" name="rd" />
+              <label class="tab-label" for="rd5">Sexual Harassment Training</label>
+              <div class="tab-content InnerTab">
+                Representation in Legal And Administration Proceedings
+              </div>
+              <div class="tab-content InnerTab">
+                Reviewing and prepairing Employment Documentation
+              </div>
+              <div class="tab-content InnerTab">
+                Human Resource Consulting And Training
+              </div>
+              <div class="tab-content InnerTab">
+                Outisde general counsel services
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div class="ContectSection" id="Contact">
+    <!-- =============== Form Section ============= -->
+    <div class="Form">
+      <form action="" class="MainForm">
+        <div class="FormContent">
+          <h2>Contect Us Toady</h2>
+          <p><span>Bold</span> labels are required</p>
+          <input placeholder="Name" type="text" name="Name" id="Name">
+          <input placeholder="Phone" type="tel" name="Phone" id="Phone">
+          <input placeholder="Email Address" type="email" name="Email" id="Email">
+          <textarea placeholder="Breaf discription of your legal issue" name="Message" id="Message"></textarea>
+
+          <div class="CheckBox">
+
+            <input type="checkbox" name="CheckBox" id="CheckBox">
+            <p>i have read the <a class="dics CommonTag">Disclaimer. </a><a class="privacy CommonTag"> Privacy
+                Policy</a></p>
+          </div>
+
+
+
+          <div class="SubmitButton">
+            <div class="SubmitButton__containent">
+              <p>Get An Initial Consultation</p>
+
+            </div>
+            <div class="SVGicon">
+              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right"
+                class="svg-inline--fa fa-arrow-right fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512">
+                <path fill="currentColor"
+                  d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z">
+                </path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </form>
+      <!-- =========== Form Details ============ -->
+      <div class="FormDetails">
+        <h2>FindLaw</h2>
+        <div class="Location">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt"
+            class="svg-inline--fa fa-map-marker-alt fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 512">
+            <path fill="currentColor"
+              d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
+            </path>
+          </svg>
+          <div class="details">
+
+            <p>Amani Bellandur Kane</p>
+            <p>Bangalore 560037</p>
+
+            <p>Map & Direction</p>
+          </div>
+        </div>
+        <div class="Local">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="mobile-alt"
+            class="svg-inline--fa fa-mobile-alt fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 512">
+            <path fill="currentColor"
+              d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm112-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v312z">
+            </path>
+          </svg>
+          <div class="LocalDetails">
+            <p class="Headeing">Local</p>
+            <p>123-456-789</p>
+          </div>
+        </div>
+        <div class="TollFree">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone-volume"
+            class="svg-inline--fa fa-phone-volume fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 512">
+            <path fill="currentColor"
+              d="M97.333 506.966c-129.874-129.874-129.681-340.252 0-469.933 5.698-5.698 14.527-6.632 21.263-2.422l64.817 40.513a17.187 17.187 0 0 1 6.849 20.958l-32.408 81.021a17.188 17.188 0 0 1-17.669 10.719l-55.81-5.58c-21.051 58.261-20.612 122.471 0 179.515l55.811-5.581a17.188 17.188 0 0 1 17.669 10.719l32.408 81.022a17.188 17.188 0 0 1-6.849 20.958l-64.817 40.513a17.19 17.19 0 0 1-21.264-2.422zM247.126 95.473c11.832 20.047 11.832 45.008 0 65.055-3.95 6.693-13.108 7.959-18.718 2.581l-5.975-5.726c-3.911-3.748-4.793-9.622-2.261-14.41a32.063 32.063 0 0 0 0-29.945c-2.533-4.788-1.65-10.662 2.261-14.41l5.975-5.726c5.61-5.378 14.768-4.112 18.718 2.581zm91.787-91.187c60.14 71.604 60.092 175.882 0 247.428-4.474 5.327-12.53 5.746-17.552.933l-5.798-5.557c-4.56-4.371-4.977-11.529-.93-16.379 49.687-59.538 49.646-145.933 0-205.422-4.047-4.85-3.631-12.008.93-16.379l5.798-5.557c5.022-4.813 13.078-4.394 17.552.933zm-45.972 44.941c36.05 46.322 36.108 111.149 0 157.546-4.39 5.641-12.697 6.251-17.856 1.304l-5.818-5.579c-4.4-4.219-4.998-11.095-1.285-15.931 26.536-34.564 26.534-82.572 0-117.134-3.713-4.836-3.115-11.711 1.285-15.931l5.818-5.579c5.159-4.947 13.466-4.337 17.856 1.304z">
+            </path>
+          </svg>
+          <div class="TollDetails">
+
+            <p class="TollHead">Toll-Free</p>
+            <p>123-456-789</p>
+          </div>
+        </div>
+        <div class="ReviewButton">
+          <h4>Review Us</h4>
+          <div class="arrowButton">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-right"
+              class="svg-inline--fa fa-arrow-right fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512">
+              <path fill="currentColor"
+                d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer">
+
+      <p>@ 2021 <span>FindLaw.</span> All Right Reserved.<a class="dics">disclaimer.</a> | <a class="SiteMap">Site
+          Map</a></p>
+      <p><a class="privacy">Privacy Policy</a> | <a class="dics">Law Firm Internet Marketing"</a> by <a href="">FindLaw,
+        </a>a Thomson Reuters Business.</p>
+    </div>
+  </footer>
+
+  <script src="./JavaScript/main.js"></script>
+</body>
+
+</html>
