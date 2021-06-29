@@ -40,10 +40,10 @@ svg {
   justify-content: center;
 }
 
-// input {
-//   outline: none;
-//   border: none;
-// }
+input {
+  outline: none;
+  border: none;
+}
 
 // Haeder ========= NavBar
 
@@ -575,10 +575,10 @@ svg {
           max-width: 360px;
           &:hover {
             background-color: #05aa73;
-            transition: all 0.5s;
+            transition: all ease-in-out 0.5s;
             .SVGicon {
               background-color: #000;
-              transition: all 0.5s;
+              transition: all ease-in-out 0.5s;
             }
           }
           &__containent {

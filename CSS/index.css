@@ -50,6 +50,11 @@ svg {
           justify-content: center;
 }
 
+input {
+  outline: none;
+  border: none;
+}
+
 .header {
   border-bottom: 1px solid #e2e8f0;
   background-color: #ffffffd3;
@@ -715,14 +720,14 @@ svg {
 
 .ContectSection .Form form .FormContent .SubmitButton:hover {
   background-color: #05aa73;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
 }
 
 .ContectSection .Form form .FormContent .SubmitButton:hover .SVGicon {
   background-color: #000;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
 }
 
 .ContectSection .Form form .FormContent .SubmitButton__containent {
