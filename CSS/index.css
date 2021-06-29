@@ -241,7 +241,7 @@ svg {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 55vh;
+  height: 75vh;
   color: #ecf0f1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -711,6 +711,18 @@ svg {
   background-color: #000;
   cursor: pointer;
   max-width: 360px;
+}
+
+.ContectSection .Form form .FormContent .SubmitButton:hover {
+  background-color: #05aa73;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.ContectSection .Form form .FormContent .SubmitButton:hover .SVGicon {
+  background-color: #000;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .ContectSection .Form form .FormContent .SubmitButton__containent {

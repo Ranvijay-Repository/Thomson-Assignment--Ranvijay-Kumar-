@@ -225,7 +225,7 @@ svg {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 55vh;
+  height: 75vh;
   color: #ecf0f1;
   display: flex;
   align-items: center;
@@ -573,6 +573,14 @@ svg {
           cursor: pointer;
           // margin: 1.5rem;
           max-width: 360px;
+          &:hover {
+            background-color: #05aa73;
+            transition: all 0.5s;
+            .SVGicon {
+              background-color: #000;
+              transition: all 0.5s;
+            }
+          }
           &__containent {
             height: 60px;
             p {
